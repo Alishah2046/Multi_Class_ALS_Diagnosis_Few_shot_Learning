@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the associated paper."
+message: "If you use this software, please cite the repository. A paper citation will be added after publication."
 title: "Multi-Class ALS Diagnosis (Few-Shot + SSL Layer Fusion)"
 authors:
   - family-names: "Ali"
@@ -12,6 +12,5 @@ authors:
     given-names: "Yoon-Ho"
   - family-names: "Lee"
     given-names: "Boreom"
-repository-code: "https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>"
+repository-code: "https://github.com/Alishah2046/Multi_Class_ALS_Diagnosis_Few_shot_Learning"
 license: "MIT"
-
