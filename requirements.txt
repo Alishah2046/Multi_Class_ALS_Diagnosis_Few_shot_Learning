@@ -1,0 +1,13 @@
+# Minimal requirements inferred from the runnable scripts and notebooks.
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+torch
+tqdm
+jupyter
+notebook
+matplotlib
+seaborn
+scipy
+

@@ -1,0 +1,68 @@
+{
+  "task": "VOC-ALS dysarthria recognition within ALS (speech_subscore <4 vs =4)",
+  "input": "rhythmPA",
+  "features": {
+    "logmel": true,
+    "delta": true,
+    "delta2": true,
+    "n_mels": 256,
+    "hop_length": 512,
+    "n_fft": 2048,
+    "img_size": 224
+  },
+  "alexnet": {
+    "pretrained": true,
+    "trainable": false,
+    "emb_dim": 768
+  },
+  "cv": {
+    "n_splits": 5,
+    "n_repeats": 4,
+    "base_seed": 42
+  },
+  "meta_learning": {
+    "k_shot": 3,
+    "q_query": 3,
+    "meta_batch_size": 16,
+    "num_epochs": 30,
+    "lr": 1e-05,
+    "model": {
+      "hidden_dim": 512,
+      "feature_dim": 256,
+      "context_dim": 64,
+      "use_metric_learner": true,
+      "distance_metric": "cosine",
+      "distance_scale_init": 10.0,
+      "dropout_p1": 0.3,
+      "dropout_p2": 0.2
+    }
+  },
+  "data": {
+    "n_samples": 102,
+    "n_subjects": 102,
+    "label_counts": {
+      "non_dys": 53,
+      "dys": 49
+    },
+    "voc_meta_xlsx": "/mnt/d/PhD/ALS_PROJECT1/ALS_Diagnosis_Meta/Dataset/RUSSIAN/VOC-ALS.xlsx",
+    "voc_rhythmPA": "/mnt/d/PhD/ALS_PROJECT1/ALS_Diagnosis_Meta/Dataset/RUSSIAN/rhythmPA"
+  },
+  "results": {
+    "mean": {
+      "acc": 0.6992857142857144,
+      "f1": 0.6857096305826957,
+      "auc": 0.7102676767676768,
+      "precision": 0.6939628427128428,
+      "recall": 0.6922222222222222,
+      "specificity": 0.7027272727272728
+    },
+    "std": {
+      "acc": 0.09794978814541881,
+      "f1": 0.1102087668051672,
+      "auc": 0.10033999580774403,
+      "precision": 0.12590664995217737,
+      "recall": 0.1435485034387547,
+      "specificity": 0.14425929364048923
+    }
+  }
+}

@@ -1,0 +1,21 @@
+Label,k=9,k=10,k=11,k=12,k=13
+Hubert / acoustic,0,0,0,11,19
+Hubert / fullspec,0,0,5,21,4
+Hubert / last3,0,1,29,0,0
+Hubert / middle3,0,0,1,29,0
+Hubert / stability,0,0,0,30,0
+data2vec / acoustic,0,0,2,28,0
+data2vec / fullspec,0,0,8,22,0
+data2vec / last3,27,3,0,0,0
+data2vec / middle3,0,0,1,29,0
+data2vec / stability,0,0,0,30,0
+wav2vec / acoustic,0,0,0,0,30
+wav2vec / fullspec,0,0,0,29,1
+wav2vec / last3,0,0,28,2,0
+wav2vec / middle3,0,0,0,30,0
+wav2vec / stability,0,0,0,30,0
+wavlm / acoustic,0,0,0,1,29
+wavlm / fullspec,0,0,0,30,0
+wavlm / last3,0,0,30,0,0
+wavlm / middle3,0,0,1,29,0
+wavlm / stability,0,0,0,30,0

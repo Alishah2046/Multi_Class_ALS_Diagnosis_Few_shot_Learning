@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data / large artifacts (do not commit)
+Dataset/
+Embeddings/
+embeddings/
+*.npy
+*.npz
+*.pth
+*.pt
+
+# Local outputs / caches
+cache*/
+wandb/
+runs/
+

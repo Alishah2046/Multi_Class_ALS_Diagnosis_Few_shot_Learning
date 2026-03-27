@@ -1,0 +1,52 @@
+{
+  "paper": "Recognition of Dysarthria in ALS patients using Hypernetworks (EUSIPCO 2025)",
+  "task": "VOC-ALS dysarthria recognition within ALS (speech_subscore <4 vs =4)",
+  "input": "rhythmPA",
+  "cv": {
+    "n_splits": 5,
+    "n_repeats": 4,
+    "base_seed": 42
+  },
+  "features": {
+    "sr": 22050,
+    "n_mels": 256,
+    "hop_length": 512,
+    "n_fft": 2048,
+    "img_size": 224
+  },
+  "model": {
+    "alexnet_pretrained": true,
+    "fine_tune_alexnet": true,
+    "alex_out_dim": 768,
+    "cond_dim": 128,
+    "hyper_hidden": 512,
+    "epochs": 30,
+    "lr": 1e-05,
+    "batch_size": 16
+  },
+  "data": {
+    "n_subjects": 102,
+    "label_counts_subjects": {
+      "non_dys": 53,
+      "dys": 49
+    }
+  },
+  "results": {
+    "mean": {
+      "acc": 0.6472619047619048,
+      "f1": 0.641697160447127,
+      "auc": 0.6964217171717171,
+      "precision": 0.6319039294039295,
+      "recall": 0.6827777777777778,
+      "specificity": 0.6127272727272728
+    },
+    "std": {
+      "acc": 0.09787213128175279,
+      "f1": 0.1157091260935939,
+      "auc": 0.11617027885463808,
+      "precision": 0.1063078020263384,
+      "recall": 0.18597341506546336,
+      "specificity": 0.17364350294699335
+    }
+  }
+}

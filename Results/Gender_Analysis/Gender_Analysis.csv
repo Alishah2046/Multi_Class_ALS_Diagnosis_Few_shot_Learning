@@ -1,0 +1,4 @@
+mode,gender,do_smote,split_seed,n_init_seeds,utt_acc_mean,utt_acc_std,utt_f1_mean,utt_f1_std,,,,,,
+full,FEMALE,TRUE,42,30,0.804392298,0.011921497,0.581841331,0.005363317,,,,,,
+full,MALE,TRUE,42,30,0.811642017,0.010378242,0.820048946,0.009959076,,,,,,
+male_matched,MALE,TRUE,42,30,0.839449541,0.011027613,0.609378494,0.004537483,,,,,,

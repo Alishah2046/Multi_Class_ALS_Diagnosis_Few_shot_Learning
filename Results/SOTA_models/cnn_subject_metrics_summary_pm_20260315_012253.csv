@@ -1,0 +1,3 @@
+model,utterance_acc,utterance_macro_f1,utterance_macro_auc_ovr,subject_acc,subject_macro_f1,subject_macro_auc_ovr
+mobilenet_v2,0.6898 ± 0.0128,0.6798 ± 0.0152,0.8550 ± 0.0128,0.9436 ± 0.0394,0.9487 ± 0.0377,0.9936 ± 0.0075
+resnet50,0.7067 ± 0.0286,0.6990 ± 0.0303,0.8702 ± 0.0208,0.9282 ± 0.0686,0.9293 ± 0.0690,0.9928 ± 0.0122
