@@ -23,7 +23,7 @@ Embeddings are released separately (see “Embeddings release” below).
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
-2. Download the released embeddings + split files from the separate embeddings repository (or the DOI/archive you host).
+2. Download the released embeddings + split files from the separate embeddings repository (https://github.com/Alishah2046/ALS_Diagnosis_Meta-ALS_SSL_Fusion_Embeddings_Release.git).
 3. Run the notebooks in `Main/` (paths are currently written for a local research workspace; adjust paths at the top of each notebook/script).
 
 ## Reproducing paper results
